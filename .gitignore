@@ -1,0 +1,29 @@
+
+# Arquivos Python compilados
+__pycache__/
+*.pyc
+
+# Ambientes virtuais
+.venv/
+env/
+venv/
+
+# Arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+
+# Arquivos de saída
+*.xlsx
+*.docx
+*.pdf
+
+# Configurações locais
+.env
+
+# Ignorar relatórios exportados
+Relatorio_entregas.xlsx
+Relatórios/*.xlsx
+
