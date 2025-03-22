@@ -22,3 +22,8 @@ venv/
 
 # Configurações locais
 .env
+
+# Ignorar relatórios exportados
+Relatorio_entregas.xlsx
+Relatórios/*.xlsx
+
