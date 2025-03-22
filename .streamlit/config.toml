@@ -1,9 +1,10 @@
-﻿[theme]
-base="dark"
-primaryColor="#08c6ff"
-backgroundColor="#0f1116"
-secondaryBackgroundColor="#1c1f26"
-textColor="#f8f9fa"
+﻿@'
+[theme]
+base = 'dark'
+primaryColor = '#08c6ff'
+backgroundColor = '#0f1116'
+secondaryBackgroundColor = '#1c1f26'
+textColor = '#f8f9fa'
 
 [server]
 headless = true
@@ -12,3 +13,4 @@ enableXsrfProtection = false
 
 [browser]
 gatherUsageStats = false
+'@
