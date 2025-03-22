@@ -1,0 +1,7 @@
+
+streamlit>=1.31
+pandas>=1.5
+openpyxl>=3.1
+python-docx
+pdfkit>=1.0
+pywin32; sys_platform == 'win32'
