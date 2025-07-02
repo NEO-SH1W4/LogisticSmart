@@ -8,176 +8,178 @@
 ![Status](https://img.shields.io/badge/status-production-brightgreen.svg)
 ![Version](https://img.shields.io/badge/version-v2.0.0-blue.svg)
 
-**Sistema Inteligente de Análise e Gestão de Entregas Logísticas**
+**Intelligent System for Analysis and Management of Logistics Deliveries**
 
-*Processamento inteligente de dados, visualizações interativas e relatórios profissionais*
+*Smart data processing, interactive visualizations, and professional reports*
 
-[🚀 Demo Online](https://logisticsmartx33beta.streamlit.app/) | [📖 Documentação](./docs/) | [🐛 Issues](https://github.com/NEO-SH1W4/LogisticSmart/issues)
+[🇺🇸 English](./README.md) | [🇧🇷 Português](./docs/pt-br/README.md)
+
+[🚀 Live Demo](https://logisticsmartx33beta.streamlit.app/) | [📖 Documentation](./docs/) | [🐛 Issues](https://github.com/NEO-SH1W4/LogisticSmart/issues)
 
 </div>
 
-## ✨ Funcionalidades Principais
+## ✨ Main Features
 
-🔐 **Autenticação Segura**: Sistema de login com 3 níveis de acesso (Admin, Usuário, Visitante)  
-📊 **Processamento Inteligente**: Detecção automática de colunas e estrutura de dados  
-🎛️ **Filtros Adaptativos**: Sistema de filtros que se adapta à estrutura dos dados carregados  
-📈 **Dashboard Interativo**: Visualizações modernas com Plotly e gráficos em tempo real  
-📥 **Exportação Múltipla**: Suporte a Excel, CSV, PDF e Word para relatórios profissionais  
-🔍 **Análise de Qualidade**: Validação e recomendações para melhoria dos dados  
-⚡ **Cache Inteligente**: Sistema de cache para melhor performance com grandes volumes  
-🎨 **Interface Moderna**: Design responsivo e intuitivo para melhor experiência
+🔐 **Secure Authentication**: Login system with 3 access levels (Admin, User, Visitor)  
+📊 **Intelligent Processing**: Automatic column and data structure detection  
+🎛️ **Adaptive Filters**: Filter system that adapts to the loaded data structure  
+📈 **Interactive Dashboard**: Modern visualizations with Plotly and real-time charts  
+📥 **Multiple Export Options**: Support for Excel, CSV, PDF, and Word for professional reports  
+🔍 **Quality Analysis**: Validation and recommendations for data improvement  
+⚡ **Smart Cache**: Cache system for improved performance with large volumes  
+🎨 **Modern Interface**: Responsive and intuitive design for a better experience
 
-## 📊 Valor de Mercado
+## 📊 Market Value
 
-- **Segmento**: Logística e Supply Chain Management
-- **Economia de Tempo**: 70-85% na geração de relatórios
-- **ROI Estimado**: 200-400% em 12 meses para empresas médias
-- **Usuários Potenciais**: 500M+ profissionais de logística globalmente
+- **Segment**: Logistics and Supply Chain Management
+- **Time Savings**: 70-85% in report generation
+- **Estimated ROI**: 200-400% in 12 months for medium enterprises
+- **Potential Users**: 500M+ logistics professionals globally
 
-## 🚀 Instalação Rápida
+## 🚀 Quick Installation
 
 ```bash
-# Via Git (recomendado)
+# Via Git (recommended)
 git clone https://github.com/NEO-SH1W4/LogisticSmart.git
 cd LogisticSmart
 
-# Criar ambiente virtual
+# Create virtual environment
 python -m venv venv
 venv\Scripts\activate  # Windows
 # source venv/bin/activate  # Linux/Mac
 
-# Instalar dependências
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-## 💡 Início Rápido
+## 💡 Quick Start
 
-### 1. Executar a Aplicação
+### 1. Run the Application
 ```bash
-# Ativar ambiente virtual
+# Activate virtual environment
 venv\Scripts\activate
 
-# Executar aplicação
+# Run application
 streamlit run app.py
 ```
 
-### 2. Primeiro Login
+### 2. First Login
 ```
-Usuário: admin
-Senha: admin123
+User: admin
+Password: admin123
 ```
 
-### 3. Upload e Análise
-1. Faça upload de arquivo Excel/CSV
-2. Configure filtros automaticamente detectados
-3. Visualize dados no dashboard interativo
-4. Exporte relatórios em múltiplos formatos
+### 3. Upload and Analyze
+1. Upload Excel/CSV file
+2. Configure automatically detected filters
+3. View data on the interactive dashboard
+4. Export reports in multiple formats
 
-## 🧩 Níveis de Acesso
+## 🧩 Access Levels
 
-| Perfil | Permissões | Descrição |
+| Role | Permissions | Description |
 |--------|------------|-----------|
-| 👑 **Admin** | ✅ Completo | Upload, análise, exportação, configurações avançadas |
-| 👤 **Usuário** | 📊 Análise | Upload de arquivos, análise e exportação de dados |
-| 👁️ **Visitante** | 👀 Somente Leitura | Visualização de relatórios e dashboards existentes |
+| 👑 **Admin** | ✅ Full | Upload, analysis, export, advanced settings |
+| 👤 **User** | 📊 Analysis | File upload, data analysis, and export |
+| 👁️ **Visitor** | 👀 Read-Only | Viewing existing reports and dashboards |
 
-## 📚 Documentação
+## 📚 Documentation
 
-- 🏃‍♂️ [**Guia de Início Rápido**](./docs/QUICKSTART.md)
-- 🎯 [**Manual do Usuário**](./docs/USER_GUIDE.md)
-- 🤝 [**Guia de Contribuição**](./CONTRIBUTING.md)
+- 🏃‍♂️ [**Quick Start Guide**](./docs/QUICKSTART.md)
+- 🎯 [**User Manual**](./docs/USER_GUIDE.md)
+- 🤝 [**Contribution Guide**](./CONTRIBUTING.md)
 - 📋 [**Changelog**](./CHANGELOG.md)
-- 📋 [**Tarefas e Status**](./TASKS.md)
+- 📋 [**Tasks and Status**](./TASKS.md)
 
-## 🛠️ Para Desenvolvedores
+## 🛠️ For Developers
 
-### Qualidade de Código
+### Code Quality
 ```bash
-# Formatação e linting
+# Formatting and linting
 black . && isort . && flake8
 
-# Testes com cobertura
+# Tests with coverage
 pytest --cov=src --cov-report=html
 
-# Verificação de tipos
+# Type checking
 mypy src/
 ```
 
-### Estrutura do Projeto
+### Project Structure
 ```
 LogisticSmart/
-├── src/                    # Código principal
-│   ├── auth/              # Sistema de autenticação
-│   ├── components/        # Componentes UI
-│   ├── config/            # Configurações
-│   └── utils/             # Utilitários e processamento
-├── tests/                 # Testes automatizados
-├── docs/                  # Documentação
-├── .github/               # Templates e CI/CD
-└── app.py                 # Aplicação principal
+├── src/                    # Main code
+│   ├── auth/              # Authentication system
+│   ├── components/        # UI components
+│   ├── config/            # Configurations
+│   └── utils/             # Utilities and processing
+├── tests/                 # Automated tests
+├── docs/                  # Documentation
+├── .github/               # Templates and CI/CD
+└── app.py                 # Main application
 ```
 
-## 🤝 Contribuindo
+## 🤝 Contributing
 
-Contribuições são muito bem-vindas! Este projeto tem potencial para impactar positivamente o setor logístico.
+Contributions are very welcome! This project has the potential to positively impact the logistics sector.
 
-1. 🍴 Fork o projeto
-2. 🌟 Crie sua feature branch
-3. ✅ Adicione testes
-4. 📝 Atualize a documentação
-5. 🚀 Abra um Pull Request
+1. 🍴 Fork the project
+2. 🌟 Create your feature branch
+3. ✅ Add tests
+4. 📝 Update the documentation
+5. 🚀 Open a Pull Request
 
-Veja o [guia completo de contribuição](./CONTRIBUTING.md).
+See the [complete contribution guide](./CONTRIBUTING.md).
 
 ## 🎯 Roadmap
 
 ### v2.1.0 (Q1 2025)
-- 🔗 Integração com APIs de transportadoras
-- 🧠 IA para predição de atrasos
-- 🧩 Sistema de plugins
+- 🔗 Integration with carrier APIs
+- 🧠 AI for delay prediction
+- 🧩 Plugin system
 
 ### v2.2.0 (Q2 2025)
-- 🌐 Interface web avançada
-- 📊 Dashboard de analytics
-- 👥 Suporte multi-tenant
+- 🌐 Advanced web interface
+- 📊 Analytics dashboard
+- 👥 Multi-tenant support
 
 ### v3.0.0 (Q3 2025)
-- 🏢 Funcionalidades enterprise
-- 📞 Suporte profissional
-- 🚀 Release para produção em escala
+- 🏢 Enterprise features
+- 📞 Professional support
+- 🚀 Production-scale release
 
-## 📈 Métricas do Projeto
+## 📈 Project Metrics
 
-- **Linhas de Código**: 2,000+
-- **Cobertura de Testes**: 80%+
-- **Dependências**: 17 principais
-- **Arquivos Python**: 15+
-- **Tempo de Setup**: < 5 minutos
+- **Lines of Code**: 2,000+
+- **Test Coverage**: 80%+
+- **Dependencies**: 17 main
+- **Python Files**: 15+
+- **Setup Time**: < 5 minutes
 
-## 🏆 Casos de Uso
+## 🏆 Use Cases
 
-### 🚛 Empresas de Transporte
-- Controle de entregas por motorista
-- Análise de performance de rotas
-- Relatórios de produtividade
+### 🚛 Transportation Companies
+- Delivery control per driver
+- Route performance analysis
+- Productivity reports
 
-### 🏭 Indústrias
-- Rastreamento de pedidos
-- Controle de logística reversa
-- Métricas de SLA
+### 🏭 Industries
+- Order tracking
+- Reverse logistics control
+- SLA metrics
 
 ### 🛒 E-commerce
-- Monitoramento de last-mile
-- Análise de satisfação do cliente
-- Otimização de entregas
+- Last-mile monitoring
+- Customer satisfaction analysis
+- Delivery optimization
 
-## 📜 Licença
+## 📜 License
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🌟 Agradecimentos
+## 🌟 Acknowledgments
 
-Construído com ❤️ para a comunidade logística. Se este projeto te ajudou, considere dar uma ⭐!
+Built with ❤️ for the logistics community. If this project helped you, consider giving it a ⭐!
 
 ---
 
@@ -185,7 +187,7 @@ Construído com ❤️ para a comunidade logística. Se este projeto te ajudou, 
 
 **[🏠 Homepage](https://github.com/NEO-SH1W4/LogisticSmart) • [📖 Docs](https://github.com/NEO-SH1W4/LogisticSmart#readme) • [🐛 Issues](https://github.com/NEO-SH1W4/LogisticSmart/issues) • [💬 Discussions](https://github.com/NEO-SH1W4/LogisticSmart/discussions)**
 
-**Desenvolvido por NEO-SH1W4 | Versão 2.0.0 | Última atualização: Janeiro 2025**
+**Developed by NEO-SH1W4 | Version 2.0.0 | Last update: January 2025**
 
 </div>
 
