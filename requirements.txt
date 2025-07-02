@@ -17,7 +17,7 @@ flake8>=6.0.0
 isort>=5.12.0
 
 # Dependências do sistema (opcional)
-wkhtmltopdf>=0.12.6
+# wkhtmltopdf>=0.12.6  # Instalar manualmente
 
 # Dependências específicas do Windows
 pywin32>=306; sys_platform == 'win32'
