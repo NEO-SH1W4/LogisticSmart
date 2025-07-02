@@ -7,6 +7,40 @@ from docx import Document
 import pdfkit
 import tempfile
 import re
+import streamlit as st
+
+# --- LOGIN SIMPLES ---
+st.set_page_config(page_title="LogisticSmart", layout="wide")
+st.markdown("<h1 style='text-align: center;'>🔐 LogisticSmart</h1>", unsafe_allow_html=True)
+
+# Dados de login (simples)
+USUARIOS = {
+    "Visitante": "fasebeta",
+    "neo": "matrix"
+}
+
+# Sessão de autenticação
+if "autenticado" not in st.session_state:
+    st.session_state.autenticado = False
+
+def autenticar(usuario, senha):
+    return USUARIOS.get(usuario) == senha
+
+if not st.session_state.autenticado:
+    with st.form("login_form"):
+        usuario = st.text_input("Usuário")
+        senha = st.text_input("Senha", type="password")
+        login = st.form_submit_button("Entrar")
+
+        if login:
+            if autenticar(usuario, senha):
+                st.session_state.autenticado = True
+                st.success("✅ Login bem-sucedido.")
+                st.experimental_rerun()
+            else:
+                st.error("❌ Usuário ou senha incorretos.")
+    st.stop()
+
 
 st.set_page_config(page_title="Relatório de Entregas - Web", layout="wide")
 st.title("📦 Logística Online - Relatório por Entregador")
